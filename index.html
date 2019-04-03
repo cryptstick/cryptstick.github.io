@@ -1,5 +1,167 @@
-<html>
-    <body>
-        <h1>cryptStick</h1>
-    </body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>cryptStick - Sicherheit zum Mitnehmen</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <style>
+    /* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: #26a69a;
+}
+
+.parallax-container {
+  
+  min-height: 70vh; 
+
+  color: rgba(0,0,0,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer .page-footer {
+  margin: 0;
+}
+
+.parallax-container .parallax img {
+      filter: brightness(1.1) blur(5px);
+
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+  </style>
+</head>
+<body class="grey darken-2">
+  <main>
+
+
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <img id="logo-container" class="brand-logo" style="padding-top: 15px; height: 70%;" src="./logo.png">
+
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot" style="padding-top: 60px">
+      <div class="container" >
+        <br><br>
+        <h1 class="header center purple-text text-darken-3" style="text-shadow: 3px 3px 30px #fff">cryptStick</h1>
+        <h3 class="header center purple-text text-darken-3" style="text-shadow: 3px 3px 30px #fff">Sicherheit zum Mitnehmen</h3>
+        <div class="row center">
+          <h5 class="header col s12 light white-text" style="text-shadow: 3px 3px 30px #000000">Ein Projekt des SFN Kassel</h5>
+        </div>
+        <div class="row center">
+          <a href="https://sfn-kassel.de" id="download-button" class="btn-large waves-effect waves-light purple darken-1">Zur Website des SFN</a>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="banner2.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+
+</main>
+  <footer class="page-footer purple darken-3" id="aboutus">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Über das SFN</h5>
+          <p class="grey-text text-lighten-4">Schüler/innen nordhessischer Schulen von Klasse 5 bis 13 forschen in Teams an echten Problemen der Naturwissenschaften: Eigene Experimente und Projekte mit Schwerpunkten in Physik, Astrophysik, Geophysik, Chemie, Biologie, Technik, Informatik und Mathematik, aktuell und praxisorientiert.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="https://facebook.com/sfn.kassel">Facebook</a></li>
+            <li><a class="white-text" href="https://twitter.com/sfn_kassel">Twitter</a></li>
+            <li><a class="white-text" href="https://instagram.com/sfn.kassel">Instagram</a></li>
+            <li><a class="white-text" href="https://www.youtube.com/channel/UCrchwoiKFCOqIcqJC6CU0Gw">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-copyright darken-4">
+      <div class="container">
+      © 2019 <a class="white-text text-lighten-3" href="https://sfn-kassel.de">SFN Kassel</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+  	(function($){
+  $(function(){
+
+    $('.sidenav').sidenav();
+    $('.parallax').parallax();
+
+  }); // end of document ready
+})(jQuery); // end of jQuery name space
+</script>
+
+  </body>
 </html>
